@@ -145,5 +145,9 @@ body{
     .apresentacao__links__navegacao{
         width: 80%;
     }
+
+    .rodape{
+        height: 300px;
+    }
     
 }
