@@ -145,6 +145,8 @@ body{
     .apresentacao__links__navegacao{
         width: 80%;
     }
-
+    .rodape{
+        font-size: 13px;
+    }
 
 }
