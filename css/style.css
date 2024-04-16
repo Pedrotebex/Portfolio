@@ -116,6 +116,10 @@ body{
 }
 
 @media (max-width: 1200px) {
+
+    body{
+        font-size: 18px
+    }
     .cabecalho{
         padding: 6%;
 
@@ -129,6 +133,10 @@ body{
     .apresentacao{
         flex-direction: column-reverse;
         padding: 5%;
+    }
+    .apresentacao__imagem{
+        width: 70%;
+        height: auto;
     }
 
     .apresentacao__conteudo{
