@@ -26,13 +26,18 @@ body{
     display: flex;
     gap: 80px;
 }
+.idioma-container {
+    display: flex;
+    align-items: center;
+}
+
 .idioma {
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--cor-terciaria);
     cursor: pointer;
-    margin-left: 20px; /* Ajuste conforme necessário */
+    margin-left: 10px; /* Ajuste conforme necessário */
 }
 
 .idioma:hover {
