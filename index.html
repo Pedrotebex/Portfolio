@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="imagex/png" href="./assets/icone tbx.png">
+    <link rel="shortcut icon" type="image/png" href="./assets/icone tbx.png">
     <title>Portfolio Pedro Augusto</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="app/script.js" defer></script>
 </head>
 
 <body>
@@ -16,46 +17,30 @@
             <a href="index.html" class="cabecalho__menu__link">Home</a>
             <a href="sobre.html" class="cabecalho__menu__link">Sobre mim</a>
             <div class="idioma-container">
-                <span class="idioma"><img src="assets/br.png" alt="Bandeira do Brasil" class="bandeira"> PT</span>
-                <span class="idioma"><img src="assets/en.png" alt="Bandeira dos Estados Unidos" class="bandeira"> EN</span>
+                <span class="idioma" id="idioma-pt">PT</span>
+                <span class="idioma" id="idioma-en">EN</span>
             </div>
-        
         </nav>
     </header>
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível<strong 
-            class="titulo-destaque"> com um Front-end de qualidade!
-            </strong></h1>
-            <p class="apresentacao__conteudo__texto">Olá! Sou Pedro Fraguglia, desenvolvedor
-            Front-end em constante evolução. Já possuo experiencia na área de criação de sites web e design na area de Marketing. Vamos
-            conversar?</p>
+            <h1 id="titulo">Eleve seu negócio digital a outro nível com um Front-end de qualidade!</h1>
+            <p id="descricao">Olá! Sou Pedro Fraguglia, desenvolvedor Front-end em constante evolução. Já possuo experiência na área de criação de sites web e design na área de Marketing. Vamos conversar?</p>
             <div class="apresentacao__links">
                 <h2 class="apresentacao__links__subtitulo">Acesse minhas Redes</h2>
-                <a class="apresentacao__links__navegacao" target="_blank" href="https://www.instagram.com/pedrofraguglia_/">
-                    <img src="assets/instagram.png" alt="icone instagram">
-                    Instagram
-                </a>
-                <a class="apresentacao__links__navegacao" target="_blank" href="https://www.linkedin.com/in/pedro-augusto-tebexreni-fraguglia-neto-0b2361253/">
-                    <img src="assets/linkedin.png" alt="icone Linkedin">
-                    Linkedin
-                </a>
-            </a>
-            <a class="apresentacao__links__navegacao" target="_blank" href="https://github.com/Pedrotebex">
-                <img src="assets/github.png" alt="icone Github">
-                GitHub
-            </a>
-            <a class="apresentacao__links__navegacao" target="_blank" href="https://api.whatsapp.com/send?phone=5519998433576&text=Ol%C3%A1%20vim%20pelo%20seu%20Portf%C3%B3lio%20HTML%20-%20CSS">
-                <img src="assets/whatsapp-official-logo-png-download.png" class="icone__whatsapp" alt="icone Whatsapp">
-                WhatsApp
-            </a>
+                <a class="apresentacao__links__navegacao" target="_blank" href="https://www.instagram.com/pedrofraguglia_/">Instagram</a>
+                <a class="apresentacao__links__navegacao" target="_blank" href="https://www.linkedin.com/in/pedro-augusto-tebexreni-fraguglia-neto-0b2361253/">Linkedin</a>
+                <a class="apresentacao__links__navegacao" target="_blank" href="https://github.com/Pedrotebex">GitHub</a>
+                <a class="apresentacao__links__navegacao" target="_blank" href="https://api.whatsapp.com/send?phone=5519998433576&text=Ol%C3%A1%20vim%20pelo%20seu%20Portf%C3%B3lio%20HTML%20-%20CSS">WhatsApp</a>
             </div>
         </section>
-        <img class="apresentacao__imagem" src="assets/Imagem_pedro.png" alt="Foto do Pedro Augusto com icones de linguagens de progamação ao fundo">
+        <img class="apresentacao__imagem" src="assets/Imagem_pedro.png" alt="Foto do Pedro Augusto com icones de linguagens de programação ao fundo">
     </main>
     <footer class="rodape">
         <p class="pedro_semlink">Desenvolvido por @Pedrofraguglia_</p>
     </footer>
+
+    <!-- Seu script JavaScript para a troca de idioma será incluído aqui -->
 </body>
 
 </html>

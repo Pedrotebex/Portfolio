@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Mim</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="app/script.js" defer></script>
 </head>
 
 <body>
@@ -15,17 +16,17 @@
         <a href="index.html" class="cabecalho__menu__link">Home</a>
         <a href="sobre.html" class="cabecalho__menu__link">Sobre mim</a>
         <div class="idioma-container">
-            <span class="idioma"><img src="assets/br.png" alt="Bandeira do Brasil" class="bandeira"> PT</span>
-            <span class="idioma"><img src="assets/en.png" alt="Bandeira dos Estados Unidos" class="bandeira"> EN</span>
+            <span class="idioma" id="idioma-pt"><img src="assets/br.png" alt="Bandeira do Brasil" class="bandeira"> PT</span>
+            <span class="idioma" id="idioma-en"><img src="assets/en.png" alt="Bandeira dos Estados Unidos" class="bandeira"> EN</span>
         </div>
     </nav>
 </header>
 
 <main class="apresentacao">
     <section class="apresentacao__conteudo">
-        <h1 class="apresentacao__conteudo__titulo">Sobre mim</h1>
-        <p class="apresentacao__conteudo__texto">Olá! Meu nome é Pedro Fraguglia e atualmente estou dedicado aos estudos de Análise e Desenvolvimento de Sistemas na Universidade São Francisco. Com uma paixão pela programação Front-End, estou determinado a me tornar um programador experiente nessa área.</p>
-        <p class="apresentacao__conteudo__texto">Tenho uma experiência anterior de dois anos e meio na indústria do Marketing Digital, onde desempenhei várias funções, incluindo gerenciamento de mídias sociais, criação de arte e conteúdo, desenvolvimento de páginas web utilizando WordPress, HTML e Javascript, além de trabalhar com servidores web. Participei ativamente em lançamentos digitais, contribuindo para resultados excepcionais.</p>
+        <h1 id="titulo" class="apresentacao__conteudo__titulo">Sobre mim</h1>
+        <p id="paragrafo1" class="apresentacao__conteudo__texto">Olá! Meu nome é Pedro Fraguglia e atualmente estou dedicado aos estudos de Análise e Desenvolvimento de Sistemas na Universidade São Francisco. Com uma paixão pela programação Front-End, estou determinado a me tornar um programador experiente nessa área.</p>
+        <p id="paragrafo2" class="apresentacao__conteudo__texto">Tenho uma experiência anterior de dois anos e meio na indústria do Marketing Digital, onde desempenhei várias funções, incluindo gerenciamento de mídias sociais, criação de arte e conteúdo, desenvolvimento de páginas web utilizando WordPress, HTML e Javascript, além de trabalhar com servidores web. Participei ativamente em lançamentos digitais, contribuindo para resultados excepcionais.</p>
     </section>
 
     <img class="apresentacao__imagem" src="assets/Imagem_pedro.png" alt="">
@@ -34,6 +35,8 @@
 <footer class="rodape">
     <p class="pedro_semlink">Desenvolvido por Pedrofraguglia_</p>
 </footer>
+
+<!-- Seu script JavaScript para a troca de idioma será incluído aqui -->
 </body>
 
 </html>
