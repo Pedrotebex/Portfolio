@@ -44,13 +44,9 @@ body{
     color: var(--cor-hover);
 }
 
-.flag-br:before {
-    content: "\f1e7"; /* Código do ícone da bandeira do Brasil em FontAwesome */
-    margin-right: 5px; /* Ajuste conforme necessário */
-}
-
-.flag-us:before {
-    content: "\f1fa"; /* Código do ícone da bandeira dos Estados Unidos em FontAwesome */
+.bandeira {
+    width: 24px; /* Ajuste conforme necessário */
+    height: auto;
     margin-right: 5px; /* Ajuste conforme necessário */
 }
 
