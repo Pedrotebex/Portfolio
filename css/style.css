@@ -26,6 +26,18 @@ body{
     display: flex;
     gap: 80px;
 }
+.idioma {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--cor-terciaria);
+    cursor: pointer;
+    margin-left: 20px; /* Ajuste conforme necessário */
+}
+
+.idioma:hover {
+    color: var(--cor-hover);
+}
 
 .cabecalho__menu__link {
     text-decoration: none;
