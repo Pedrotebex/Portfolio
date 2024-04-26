@@ -25,6 +25,7 @@ body{
 .cabecalho__menu {
     display: flex;
     gap: 80px;
+    width: fit-content;
 }
 .idioma-container {
     display: flex;
