@@ -16,18 +16,19 @@ const paragrafo2 = document.getElementById('paragrafo2');
 function toggleLanguage() {
     idiomaPtBtn.addEventListener('click', function() {
         // Atualiza o conteúdo dos elementos para os textos em português
-        titulo.textContent = 'Sobre mim';
-        paragrafo1.textContent = 'Olá! Meu nome é Pedro Fraguglia e atualmente estou dedicado aos estudos de Análise e Desenvolvimento de Sistemas na Universidade São Francisco. Com uma paixão pela programação Front-End, estou determinado a me tornar um programador experiente nessa área.';
-        paragrafo2.textContent = 'Tenho uma experiência anterior de dois anos e meio na indústria do Marketing Digital, onde desempenhei várias funções, incluindo gerenciamento de mídias sociais, criação de arte e conteúdo, desenvolvimento de páginas web utilizando WordPress, HTML e Javascript, além de trabalhar com servidores web. Participei ativamente em lançamentos digitais, contribuindo para resultados excepcionais.';
+        titulo.innerHTML = '<h1 class="apresentacao__conteudo__titulo">Sobre mim</h1>';
+        paragrafo1.innerHTML = '<p class="apresentacao__conteudo__texto">Olá! Meu nome é Pedro Fraguglia e atualmente estou dedicado aos estudos de Análise e Desenvolvimento de Sistemas na Universidade São Francisco. Com uma paixão pela programação Front-End, estou determinado a me tornar um programador experiente nessa área.</p>';
+        paragrafo2.innerHTML = '<p class="apresentacao__conteudo__texto">Tenho uma experiência anterior de dois anos e meio na indústria do Marketing Digital, onde desempenhei várias funções, incluindo gerenciamento de mídias sociais, criação de arte e conteúdo, desenvolvimento de páginas web utilizando WordPress, HTML e Javascript, além de trabalhar com servidores web. Participei ativamente em lançamentos digitais, contribuindo para resultados excepcionais.</p>';
     });
 
     idiomaEnBtn.addEventListener('click', function() {
         // Atualiza o conteúdo dos elementos para os textos em inglês
-        titulo.textContent = tituloEnText;
-        paragrafo1.textContent = paragrafo1EnText;
-        paragrafo2.textContent = paragrafo2EnText;
+        titulo.innerHTML = '<h1 class="apresentacao__conteudo__titulo">' + tituloEnText + '</h1>';
+        paragrafo1.innerHTML = '<p class="apresentacao__conteudo__texto">' + paragrafo1EnText + '</p>';
+        paragrafo2.innerHTML = '<p class="apresentacao__conteudo__texto">' + paragrafo2EnText + '</p>';
     });
 }
 
 // Chama a função para alternar os textos entre português e inglês
 toggleLanguage();
+
