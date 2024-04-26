@@ -25,9 +25,10 @@ body{
 .cabecalho__menu {
     display: flex;
     gap: 80px;
+    align-items: center;
 
 }
-/*
+
 .idioma-container {
     display: flex;
     align-items: center;
@@ -35,11 +36,11 @@ body{
 
 .idioma {
     font-family: var(--fonte-secundaria);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 400;
     color: var(--cor-terciaria);
     cursor: pointer;
-    margin-left: 10px; /* Ajuste conforme necessário 
+    margin-left: 10px; 
 }
 
 .idioma:hover {
@@ -50,7 +51,7 @@ body{
     width: 24px; 
     height: auto;
     margin-right: 5px; 
-}*/
+}
 
 
 .cabecalho__menu__link {
@@ -153,9 +154,25 @@ body{
         padding: 6%;
 
     }
+    .bandeira{
+        height: 20px;
+        width: auto;
+        align-items: center;
+    }
 
     .cabecalho__menu{
         justify-content: center;
+        gap: 20px;
+    }
+
+    .idioma-container {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+    .idioma{
+        align-items: center;
+        font-size: 15px;
     }
     
     
