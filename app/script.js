@@ -1,34 +1,60 @@
-// Textos em inglês
-const idiomaPtText = 'PT';
-const idiomaEnText = 'EN';
-const tituloEnText = 'About Me';
-const paragrafo1EnText = 'Hello! My name is Pedro Fraguglia and I\'m currently dedicated to studying Systems Analysis and Development at the University of São Francisco. With a passion for Front-End programming, I\'m determined to become an experienced programmer in this field.';
-const paragrafo2EnText = 'I have previous experience of two and a half years in the Digital Marketing industry, where I performed various functions, including social media management, creation of art and content, development of web pages using WordPress, HTML, and Javascript, as well as working with web servers. I actively participated in digital launches, contributing to exceptional results.';
+document.addEventListener('DOMContentLoaded', function() {
+    const idiomaPtBtn = document.getElementById('idioma-pt');
+    const idiomaEnBtn = document.getElementById('idioma-en');
+    const titulo = document.getElementById('titulo');
+    const descricao = document.getElementById('descricao');
+    const pedroSemlink = document.querySelector('.pedro_semlink');
+    const subtitulo = document.querySelector('.apresentacao__links__subtitulo');
+    const homeLink = document.querySelector('.cabecalho__menu__link[href="index.html"]');
+    const sobreLink = document.querySelector('.cabecalho__menu__link[href="sobre.html"]');
 
-// Seleção dos elementos na página Home
-const idiomaPtBtn = document.getElementById('idioma-pt');
-const idiomaEnBtn = document.getElementById('idioma-en');
-const titulo = document.getElementById('titulo');
-const paragrafo1 = document.getElementById('paragrafo1');
-const paragrafo2 = document.getElementById('paragrafo2');
+    // Textos em Português
+    const textosPt = {
+        'titulo': 'Eleve seu negócio digital a outro nível <span class="titulo-destaque">com um Front-end de qualidade!</span>',
+        'descricao': 'Olá! Sou Pedro Fraguglia, desenvolvedor Front-end em constante evolução. Já possuo experiência na área de criação de sites web e design na área de Marketing. Vamos conversar?',
+        'pedro_semlink': 'Desenvolvido por @Pedrofraguglia_',
+        'subtitulo': 'Acesse minhas Redes',
+        'home': 'Home',
+        'sobre': 'Sobre mim'
+    };
 
-// Função para alternar os textos entre português e inglês
-function toggleLanguage() {
+    // Textos em Inglês
+    const textosEn = {
+        'titulo': 'Take your digital business to the next level with <span class="titulo-destaque">quality Front-end!</span>',
+        'descricao': 'Hello! I\'m Pedro Fraguglia, a Front-end developer constantly evolving. I already have experience in web design and marketing design. Shall we talk?',
+        'pedro_semlink': 'Developed by @Pedrofraguglia_',
+        'subtitulo': 'Access my Networks',
+        'home': 'Home',
+        'sobre': 'About Me'
+    };
+
+    // Função para atualizar os textos
+    function atualizarTextos(idioma) {
+        if (idioma === 'en') {
+            console.log('Mudando para Inglês');
+            titulo.innerHTML = textosEn['titulo'];
+            descricao.innerHTML = textosEn['descricao'];
+            pedroSemlink.textContent = textosEn['pedro_semlink'];
+            subtitulo.textContent = textosEn['subtitulo'];
+            homeLink.textContent = textosEn['home'];
+            sobreLink.textContent = textosEn['sobre'];
+        } else {
+            console.log('Mudando para Português');
+            titulo.innerHTML = textosPt['titulo'];
+            descricao.innerHTML = textosPt['descricao'];
+            pedroSemlink.textContent = textosPt['pedro_semlink'];
+            subtitulo.textContent = textosPt['subtitulo'];
+            homeLink.textContent = textosPt['home'];
+            sobreLink.textContent = textosPt['sobre'];
+        }
+    }
+
+    // Event listeners para os botões de idioma
     idiomaPtBtn.addEventListener('click', function() {
-        // Atualiza o conteúdo dos elementos para os textos em português
-        titulo.innerHTML = '<h1 class="apresentacao__conteudo__titulo">Sobre mim</h1>';
-        paragrafo1.innerHTML = '<p class="apresentacao__conteudo__texto">Olá! Meu nome é Pedro Fraguglia e atualmente estou dedicado aos estudos de Análise e Desenvolvimento de Sistemas na Universidade São Francisco. Com uma paixão pela programação Front-End, estou determinado a me tornar um programador experiente nessa área.</p>';
-        paragrafo2.innerHTML = '<p class="apresentacao__conteudo__texto">Tenho uma experiência anterior de dois anos e meio na indústria do Marketing Digital, onde desempenhei várias funções, incluindo gerenciamento de mídias sociais, criação de arte e conteúdo, desenvolvimento de páginas web utilizando WordPress, HTML e Javascript, além de trabalhar com servidores web. Participei ativamente em lançamentos digitais, contribuindo para resultados excepcionais.</p>';
+        atualizarTextos('pt');
     });
 
     idiomaEnBtn.addEventListener('click', function() {
-        // Atualiza o conteúdo dos elementos para os textos em inglês
-        titulo.innerHTML = '<h1 class="apresentacao__conteudo__titulo">' + tituloEnText + '</h1>';
-        paragrafo1.innerHTML = '<p class="apresentacao__conteudo__texto">' + paragrafo1EnText + '</p>';
-        paragrafo2.innerHTML = '<p class="apresentacao__conteudo__texto">' + paragrafo2EnText + '</p>';
+        atualizarTextos('en');
     });
-}
-
-// Chama a função para alternar os textos entre português e inglês
-toggleLanguage();
-
+});
