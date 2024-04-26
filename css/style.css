@@ -27,6 +27,7 @@ body{
     gap: 80px;
     width: fit-content;
 }
+/*
 .idioma-container {
     display: flex;
     align-items: center;
@@ -38,7 +39,7 @@ body{
     font-weight: 400;
     color: var(--cor-terciaria);
     cursor: pointer;
-    margin-left: 10px; /* Ajuste conforme necessário */
+    margin-left: 10px; /* Ajuste conforme necessário 
 }
 
 .idioma:hover {
@@ -46,10 +47,10 @@ body{
 }
 
 .bandeira {
-    width: 24px; /* Ajuste conforme necessário */
+    width: 24px; 
     height: auto;
-    margin-right: 5px; /* Ajuste conforme necessário */
-}
+    margin-right: 5px; 
+}*/
 
 
 .cabecalho__menu__link {
