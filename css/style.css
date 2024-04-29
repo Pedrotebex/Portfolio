@@ -36,7 +36,7 @@ body{
 
 .idioma {
     font-family: var(--fonte-secundaria);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 400;
     color: var(--cor-terciaria);
     cursor: pointer;
